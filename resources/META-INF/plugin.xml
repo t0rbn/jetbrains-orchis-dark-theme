@@ -1,30 +1,29 @@
-cd <idea-plugin>
-  <id>xyz.torben.jetbrains-orchis-dark-theme</id>
-  <name>Jetbrains Orchis Dark Theme</name>
-  <version>1.0</version>
+<idea-plugin>
+    <id>xyz.torben.jetbrains-orchis-dark-theme</id>
+    <name>Jetbrains Orchis Dark Theme</name>
+    <version>1.0</version>
+    <vendor email="torben@otorben.xyz" url="http://torben.xyz">t0rbn</vendor>
 
-  <description><A theme that (hopefully) matches the orchis gtk theme</description>
+    <description><![CDATA[
+    A theme that (hopefully) matches the orchis gtk theme
+  ]]></description>
 
-  <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
-    ]]>
-  </change-notes>
+    <change-notes></change-notes>
 
-  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="173.0"/>
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
 
-  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-       on how to target different products -->
-  <depends>com.intellij.modules.platform</depends>
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
 
-  <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
-    <themeProvider id="7809b293-f1d6-41eb-91de-52ee9eb73f66" path="/orchis_dark.theme.json"/>
-  </extensions>
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <themeProvider id="7809b293-f1d6-41eb-91de-52ee9eb73f66" path="/orchis_dark.theme.json"/>
+    </extensions>
 
-  <actions>
-    <!-- Add your actions here -->
-  </actions>
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
 
 </idea-plugin>
