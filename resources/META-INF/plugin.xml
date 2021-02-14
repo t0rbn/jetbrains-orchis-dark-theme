@@ -1,13 +1,9 @@
 cd <idea-plugin>
-  <id>com.your.company.unique.plugin.id</id>
-  <name>Plugin display name here</name>
+  <id>xyz.torben.jetbrains-orchis-dark-theme</id>
+  <name>Jetbrains Orchis Dark Theme</name>
   <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
 
-  <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
-    ]]></description>
+  <description><A theme that (hopefully) matches the orchis gtk theme</description>
 
   <change-notes><![CDATA[
       Add change notes here.<br>
@@ -24,6 +20,7 @@ cd <idea-plugin>
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
+    <themeProvider id="7809b293-f1d6-41eb-91de-52ee9eb73f66" path="/orchis_dark.theme.json"/>
   </extensions>
 
   <actions>
